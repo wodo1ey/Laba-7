@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+double Fact2(double n) {
+	if (n >= 1) return (Fact2(n - 2) * n);
+	else return 1;
+}
+
+int main()
+{
+	double n1, n2, n3, n4, n5;
+	cin >> n1;
+	cout << "n!! = " << Fact2(n1) << endl;
+	cin >> n2;
+	cout << "n!! = " << Fact2(n2) << endl;
+	cin >> n3;
+	cout << "n!! = " << Fact2(n3) << endl;
+	cin >> n4;
+	cout << "n!! = " << Fact2(n4) << endl;
+	cin >> n5;
+	cout << "n!! = " << Fact2(n5);
+}
